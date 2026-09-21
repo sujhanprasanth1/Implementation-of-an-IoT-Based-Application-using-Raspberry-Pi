@@ -27,7 +27,8 @@ To implement an IoT-based environmental monitoring application using Raspberry P
 
 ---
 
-**To upload Wokwi circuit diagram**
+<img width="311" height="378" alt="image" src="https://github.com/user-attachments/assets/814b448e-b30f-4b8e-aec1-97250032db9d" />
+
 
 ---
 
