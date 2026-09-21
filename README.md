@@ -135,8 +135,37 @@ The LED is used as a local status indicator. It turns ON when the measured tempe
 
 # Program
 
+      from machine import Pin, ADC
+      import time
+
+      led = Pin(15, Pin.OUT)
+      button = Pin(14, Pin.IN, Pin.PULL_DOWN)
+      sensor = ADC(Pin(26))
+
+      while True:
+    # Button control
+    if button.value() == 1:
+        led.value(1)
+        print("Button Pressed -> LED ON")
+    else:
+        led.value(0)
+        print("Button Released -> LED OFF")
+
+    # Sensor reading
+    sensor_value = sensor.read_u16()
+    voltage = (sensor_value / 65535) * 3.3
+    print("Sensor Value:", sensor_value, "Voltage:", voltage)
+
+    # Simulated IoT output
+    print("Publishing to Cloud: {\"sensor\": %d, \"voltage\": %.2f}" % (sensor_value, voltage))
+
+    time.sleep(1)
+
+
 
 # Observation
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a5d93e41-64e8-44a4-8fa0-11bae62df07f" />
 
 
 
