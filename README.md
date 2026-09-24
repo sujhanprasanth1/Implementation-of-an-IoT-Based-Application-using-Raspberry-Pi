@@ -167,6 +167,8 @@ The LED is used as a local status indicator. It turns ON when the measured tempe
 # Observation
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a5d93e41-64e8-44a4-8fa0-11bae62df07f" />
+<img width="1280" height="964" alt="image" src="https://github.com/user-attachments/assets/b8b2af33-e520-4bcf-8706-bdc8931737f8" />
+
 
 
 
